@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ევაკუატორი 24/7</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-p1CmC3mhdzzc3/7XefRri3MZBfXgn5EQh02uOlwv9o3q5+t1Zx9LqgpGrNkq2piHfSx5nY2zRJXhaP+5zFQz0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">ევაკუატორი</h1>
+      <nav class="site-nav">
+        <a href="#services">სერვისები</a>
+        <a href="#gallery">გალერეა</a>
+        <a href="#contact">კონტაქტი</a>
+      </nav>
+      <a class="btn-phone" href="tel:597635959"><i class="fas fa-phone-alt"></i> 597 635 959</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>24/7 ავტომობილის გადაყვანა</h2>
+      <p>სწრაფი, უსაფრთხო, სანდო სერვისი</p>
+      <a class="btn-primary" href="#contact">დაგვიკავშირდით</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">ჩვენი სერვისები</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-truck-moving icon"></i>
+          <h3>ავტომობილის ევაკუაცია</h3>
+          <p>ყველა ტიპის მანქანის სწრაფი და უსაფრთხო გადაზიდვა.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-stopwatch icon"></i>
+          <h3>სწრაფი რეაგირება</h3>
+          <p>ღამის საათებშიც 15 წთ–ში ადგილზე.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-headset icon"></i>
+          <h3>24/7 მხარდაჭერა</h3>
+          <p>ოპერატორი გისმენს მთელი დღე-ღამის განმავლობაში.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2 class="section-title">ფოტო გალერეა</h2>
+      <div class="images">
+        <div class="img-container">
+          <img src="../images/ajjjsjs.jpg" alt="ევაკუატორი 1">
+          <div class="overlay">597 63 59 59</div>
+        </div>
+        <div class="img-container">
+          <img src="../images/evauuuuuuuuu.jpg" alt="ევაკუატორი 2">
+          <div class="overlay">597 63 59 59</div>
+        </div>
+        <div class="img-container">
+          <img src="../images/ljgjh.jpg" alt="ევაკუატორი 3">
+          <div class="overlay">597 63 59 59</div>
+        </div>
+        <!-- დამატებითი ფოტოები შეგიძლია დაამატო აქ -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">დაგვიკავშირდით</h2>
+      <div class="contact-content">
+        <form class="contact-form">
+          <label for="name">სახელი</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">ტელეფონი</label>
+          <input type="tel" id="phone" name="phone" value="597635959" required />
+
+          <label for="location">ადგილმდებარეობა</label>
+          <input type="text" id="location" name="location" placeholder="ქალაქი, მისამართი" required />
+
+          <button type="submit" class="btn-primary">გაგზავნა</button>
+        </form>
+        <div class="contact-info">
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:597635959">597 63 59 59</a></p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/995597635959" target="_blank">WhatsApp</a></p>
+          <p><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1DmoqNLQ9H/" target="_blank">Facebook</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> თბილისი, საქართველო</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 ევაკუატორი. ყველა უფლება დაცულია.</p>
+      <a class="fb-footer" href="https://www.facebook.com/share/1DmoqNLQ9H/" target="_blank">
+        <i class="fab fa-facebook-f"></i> Facebook გვერდი
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger toggle
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
